@@ -1,1 +1,17 @@
-<p>alimentos works!</p>
+<div class="d-flex justify-content-around mt-3">
+    <div class="d-flex justify-content-around">
+        <div class="card" style="width: 18rem;" *ngFor="let alimentos of listaalimentos">
+            <img src="{{alimentos.imagen}}" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title">{{alimentos.nombre}}</h5>
+              <p class="card-text">{{alimentos.descripcion}}</p>
+              <div class="d-flex justify-content-around">
+                <button><i class='bx bxs-down-arrow'></i></button>
+                <p>{{alimentos.cantidad}}</p>
+                <button><i class='bx bxs-up-arrow'></i></button>
+
+              </div>
+            </div>
+          </div>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="mt-4 d-flex justify-content-around">
+    <div class=" d-flex justify-content-around">
+        <div class="card text-bg-dark" style="width: 18rem;" *ngFor="let empleado of empleados">
+            <img src="{{empleado.imagen}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{empleado.nombre}}</h5>
+              <p class="card-text">{{empleado.descripcion}}</p>
+              <a href="#" class="btn btn-primary">Mas detalle </a>
+            </div>
+          </div>
+    </div>
+</div>

@@ -1,0 +1,68 @@
+<div class="row d-flex justify-content-evenly " >
+<button style="height: 80; width: 110px; background-color: #9fd8e9;" class="text-button "><img src="https://www.comedera.com/wp-content/uploads/2021/01/fresh-cola-drink-with-ice.jpg" alt="" width="100%" height="100">Bebidas</button>
+<button style="height: 100; width: 110px;"><img src="https://vips.com.mx/menu/imgpreview/platos/plato_mixto.jpg" width="100%" alt=""> Entradas</button>
+<button style="height: 100; width: 110px;"><img src="https://www.unileverfoodsolutions.com.mx/tendencias/de-mexico-para-el-mundo/platillos-mexicanos/top10-platillos/jcr:content/parsys/content-aside-footer/columncontrol/columnctrl_parsys_1/textimage/image.transform/jpeg-optimized/image.1592429873377.jpg" width="100%" height="100" alt=""> Platillos</button>
+<button style="height: 100; width: 110px;"><img src="https://www.comidasrapidastaz1996.com/wp-content/uploads/elementor/thumbs/CatAdic-ot0uxh4jj7m46n8x4yznzvxu6lu35izchdssiponow.png" width="100%" alt="">Adiccionales</button>
+<button style="height: 100; width: 110px;"><img src="https://www.recetasnestle.com.mx/sites/default/files/styles/crop_recipe_card/public/srh_recipes/54c6cbcbc6d611e056122d64560cd9c1.jpg.webp?itok=j5bk2Uro" width="100%" alt=""> Postres</button>
+</div>
+<div class="row mt-1 " style="height: 1000px;">
+    <div class="col-4" style="background-color: #dd9715; height: 1000px;">
+
+      <table class="table table-dark">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Cantidad</th>
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Enchiladas Verdes</td>
+            <td>$40</td>
+            <td>2</td>
+            <td>$ 80</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Enchiladas Rojas</td>
+            <td>$ 40</td>
+            <td>3</td>
+            <td>$120</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Coca Cola</td>
+            <td>$15</td>
+            <td>5</td>
+            <td>$75</td>
+          </tr>
+          <tr>
+            <td colspan="4">Total</td>
+            <td>$275</td>
+          </tr>
+        </tbody>
+      </table>
+<button class="btn btn-dark" style="margin-left: 600px;">Pagar</button>  
+    </div>
+    <div class="col-8 d-flex" style="background-color: rgb(224, 168, 12); ">
+        <div class="card" style="width: 10rem; height: 350px;" *ngFor="let comida of comidas">
+            <img src="{{comida.imagen}}" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title">{{comida.nombre}}</h5>
+              <p class="card-text">{{comida.descripcion}}</p>
+              <div class="d-flex justify-content-around">
+                <button><i class='bx bxs-down-arrow'></i></button>
+                <p>Cantidad</p>
+                <button><i class='bx bxs-up-arrow'></i></button>
+
+              </div>
+            </div>
+          </div>
+    
+    
+    </div>
+</div>
